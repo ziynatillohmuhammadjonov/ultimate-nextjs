@@ -212,3 +212,22 @@ Tabriklaymiz siz hozirgacha ko'rsatilgan hamma yo'llardan o'tib oldingiz. Bu yer
 - Kod muxarriri orqali sxema yasadingiz
 - Bir qancha kontentlarni studio orqali qo'shdingiz, Content Lakega joyldingiz. 
 - Interfeysni uladingiz, va ma'lumotlari ko'rsatdingiz.
+
+# Sxemalar
+Sxemalar - tasvirlaydi maydondagi hujjat turini, qaysiki redaktorlarni Sanity Studio ishchi hududida hosil qilish uchun.
+Yuqori darajasi schema ni ikki hil qiymatli obyekt qabul qiladi. `templates` va `types`
+`templates` - sozlamalar massivini qabul qiladi boshlang'ich qiymatga ega bo'lgan yoki qayta chaqiriladigan funksiyalarni va uni qaytaradi
+`types` - ko'rsatilgan sxema yoki funksiyalar massivini qabul qiladi va un iqaytaradi.
+В обоих случаях функция обратного вызова вызывается с текущим значением в качестве первого аргумента и объектом контекста в качестве второго. Таким образом, вы можете получить доступ к определениям схем и шаблонам начальных значений, реализованным с помощью плагинов.
+templates - bu muhim bo'lmagan qiymat hisoblanib uni berish ixtiyoriy.
+Quyida biz types uchun qabul qilinadiga qiymatlarni ko'rib chiqamiz.
+- type (majburiy) - sxemani tipini nomi har qanday bo'lishi mumkin. Ma'lumotlar yoshiz tipini nomi hisoblanadi. 
+- name (majburiy) - maydon nomi. Bu ma'lumotlar yozish uchun kalit hisoblanadi. 
+- title - ma'lumot kiritish uchun foydalanuvchiga yo'llanma. 
+- hidden - true yoki false qaytaradigan statik yoki qayta chaqiriladigan funksiya qabul qiladi. Shu asosida ma'lumot kiritish maydonini yashiradi yoki ko'rsatadi. 
+- readOnly - agar true qo'yilsa bu maydon o'zgartirilmaydigan bo'ladi kontent studiyasida. Bundan tashqari qaytaradigan funksiya ham qo'llashingizn mumkin.
+- description - qisqa ma'lumot muharrir uchun bu maydonni qanday to'ldirilishi haqida. 
+- deprecated - qatorni ekirgan qilib belgilaydi. Bu maydon faqat o'qish uchun faol degan kabi ko'rsatadi vizula habar eskirdi degan bilan. 
+
+  `Array` - massivlar.
+  
