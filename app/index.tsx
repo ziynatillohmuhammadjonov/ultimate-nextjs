@@ -33,7 +33,6 @@ export const getStaticProps = async()=> {
 export default async function IndexPage() {
     const pets= await getStaticProps()
     
-    console.log(pets);
     
     return (
 

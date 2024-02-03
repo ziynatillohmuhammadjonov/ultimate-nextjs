@@ -230,4 +230,32 @@ Quyida biz types uchun qabul qilinadiga qiymatlarni ko'rib chiqamiz.
 - deprecated - qatorni ekirgan qilib belgilaydi. Bu maydon faqat o'qish uchun faol degan kabi ko'rsatadi vizula habar eskirdi degan bilan. 
 
   `Array` - massivlar.
-  
+Sxema turi aray ichidagi bir qancha boshqa tiplar uchun.
+Tartiblangan ma'lumotlar ro'yxati. `of` xususiyati qanday turdagi qiymatlar massivda bo'lishini belgilaydi. 
+Properties - xarakteristika - xususiyatlari
+type: array - array e'lon qilinihshi uchun ishlatiladi. 
+name: - maydon nomi dataga yozish uchun. 
+of: - qanday tiplar kitilishini ko'rsatadi massiv elamentlariga.
+- title - ma'lumot kiritish uchun foydalanuvchiga yo'llanma. 
+- hidden - true yoki false qaytaradigan statik yoki qayta chaqiriladigan funksiya qabul qiladi. Shu asosida ma'lumot kiritish maydonini yashiradi yoki ko'rsatadi. 
+- readOnly - agar true qo'yilsa bu maydon o'zgartirilmaydigan bo'ladi kontent studiyasida. Bundan tashqari qaytaradigan funksiya ham qo'llashingizn mumkin.
+- description - qisqa ma'lumot muharrir uchun bu maydonni qanday to'ldirilishi haqida. 
+- deprecated - qatorni ekirgan qilib belgilaydi. Bu maydon faqat o'qish uchun faol degan kabi ko'rsatadi vizula habar eskirdi degan bilan. 
+Option - Variantlar 
+- sortable: true - Foydalanuvchiga massivdagi elementlarni qayta tartiblashiga ruxsat berilganligini nazorat qiladi. Standartlar rost.
+- layout:[string]-Agar teglar oʻrnatilgan boʻlsa, massivni yagona, tokenlashtirilgan kiritish maydoni sifatida koʻrsatadi. Ushbu parametr faqat massivda satrlar bo'lsa ishlaydi.
+Agar to'rga o'rnatilgan bo'lsa, u panjara shaklida ko'rsatiladi.
+Agar massiv ro'yxat opsiyasidan foydalansa, u qiymatlarni katakchalarning vertikal ro'yxati sifatida ko'rsatadi. Belgilash katakchalarini gorizontal joylashtirish uchun panjara tartibidan foydalaning.
+- list:[array] - Oldindan belgilangan qiymatlar ro'yxati uchun belgilash katakchalarini ko'rsatadi.
+Primitivlar massivlari uchun quyidagi formatlar qo'llab-quvvatlanadi:
+    [ {value: <value>, title: <title>}, { … } ]
+    [ <value1>, <value2>, … ]
+Ob'ektlar massivlari uchun format:
+    [ {_type: <mandatory-object-type>, _key: <optional-key>, /* optionally any fields that exist in <object-type>*/}, { … } ]
+Ob'ektlar ob'ekt turlarini oldindan ko'rish konfiguratsiyasi yordamida ko'rsatiladi.
+- modal: [object] ob'ekt
+Modal (massiv tarkibini tahrirlash uchun dialog) qanday ko'rsatilishini boshqaradi. Type va width xususiyatiga ega ob'ektni oladi.
+turi dialog yoki popover bo'lishi mumkin, kenglik "avtomatik" yoki raqam bo'lishi mumkin.
+Default is {type: 'dialog', width: 'auto'}.
+ Validation - validatsiay tekshirish tasdiqlash. 
+
