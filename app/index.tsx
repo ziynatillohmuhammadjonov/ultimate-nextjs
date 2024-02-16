@@ -60,7 +60,7 @@ export default async function IndexPage() {
                     <div>
                         <div>¯\_(ツ)_/¯</div>
                         <p>
-                            Your data will show up here when you've configured everything
+                            Your data will show up here when you‘ve configured everything
                             correctly
                         </p>
                     </div>
